@@ -1,0 +1,53 @@
+{
+  "closed_pool": [
+    {
+      "generator_id": "DreamOmni2",
+      "access": "open-weight"
+    },
+    {
+      "generator_id": "FLUX.2-klein-9B",
+      "access": "open-weight"
+    },
+    {
+      "generator_id": "FLUX.2-klein-4B",
+      "access": "open-weight"
+    },
+    {
+      "generator_id": "NanoBanana",
+      "access": "api"
+    },
+    {
+      "generator_id": "OmniGen2",
+      "access": "open-weight"
+    },
+    {
+      "generator_id": "Qwen-Image-Edit-2511",
+      "access": "open-weight"
+    },
+    {
+      "generator_id": "Scone",
+      "access": "open-weight"
+    },
+    {
+      "generator_id": "SenseNova-U1.5-8B-MoT",
+      "access": "open-weight"
+    },
+    {
+      "generator_id": "SenseNova-U1.5-8B-MoT-8step",
+      "access": "open-weight"
+    },
+    {
+      "generator_id": "UNO",
+      "access": "open-weight"
+    }
+  ],
+  "onboarding_only": [
+    "Seedream-5.0",
+    "Wan2.7-Image"
+  ],
+  "cost_protocol": {
+    "self_hosted": "median batch-one latency by reference count on one A100-SXM4-40GB",
+    "gpu_price_usd_per_hour": 1.99,
+    "nanobanana_usd_per_image": 0.134
+  }
+}

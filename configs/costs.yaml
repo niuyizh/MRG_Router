@@ -1,0 +1,48 @@
+gpu:
+  accelerator: NVIDIA A100-SXM4-40GB
+  usd_per_gpu_hour: 1.99
+  batch_size: 1
+generators:
+  DreamOmni2:
+    access: open-weight
+    gpu_count: 1
+    median_seconds_by_reference_count: {2: 56.13, 3: 80.57, 4: 108.26, 5: 139.21}
+  FLUX.2-klein-9B:
+    access: open-weight
+    gpu_count: 1
+    median_seconds_by_reference_count: {2: 3.62, 3: 4.33, 4: 4.82, 5: 5.53}
+  FLUX.2-klein-4B:
+    access: open-weight
+    gpu_count: 1
+    median_seconds_by_reference_count: {2: 2.00, 3: 2.45, 4: 2.71, 5: 3.15}
+  OmniGen2:
+    access: open-weight
+    gpu_count: 1
+    median_seconds_by_reference_count: {2: 82.75, 3: 98.94, 4: 112.69, 5: 128.66}
+  Qwen-Image-Edit-2511:
+    access: open-weight
+    gpu_count: 1
+    median_seconds_by_reference_count: {2: 166.88, 3: 235.95, 4: 313.66, 5: 403.07}
+  Scone:
+    access: open-weight
+    gpu_count: 1
+    median_seconds_by_reference_count: {2: 102.87, 3: 112.25, 4: 119.21, 5: 126.35}
+  SenseNova-U1.5-8B-MoT:
+    access: open-weight
+    gpu_count: 1
+    median_seconds_by_reference_count: {2: 73.21, 3: 73.24, 4: 74.10, 5: 73.36}
+  SenseNova-U1.5-8B-MoT-8step:
+    access: open-weight
+    gpu_count: 1
+    median_seconds_by_reference_count: {2: 10.77, 3: 10.91, 4: 11.14, 5: 11.05}
+  UNO:
+    access: open-weight
+    gpu_count: 1
+    median_seconds_by_reference_count: {2: 23.50, 3: 24.65, 4: 26.02, 5: 27.76}
+  NanoBanana:
+    access: api
+    usd_per_image: 0.134
+    provenance: conservative_price_proxy
+onboarding_only:
+  Seedream-5.0: {access: api, usd_per_image: 0.033}
+  Wan2.7-Image: {access: api, usd_per_image_approx: 0.028}

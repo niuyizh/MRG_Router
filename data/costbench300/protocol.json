@@ -1,0 +1,18 @@
+{
+  "name": "CostBench-300",
+  "hardware": "NVIDIA A100-SXM4-40GB",
+  "execution": "serial batch-one inference on one GPU",
+  "queries": 300,
+  "task_structures": 12,
+  "queries_per_task_structure": 25,
+  "reference_counts": {
+    "2": 75,
+    "3": 75,
+    "4": 75,
+    "5": 75
+  },
+  "generation_seed": 42,
+  "timing_definition": "Per-query generation latency; model loading and external prompt rewriting are excluded.",
+  "open_weight_generators": 9,
+  "records": 2700
+}

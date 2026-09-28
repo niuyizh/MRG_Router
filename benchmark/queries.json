@@ -1,0 +1,55 @@
+[
+  {
+    "sample_id": "example_k2_001",
+    "split": "schema_preview",
+    "prompt": "Combine the identity cue from the first reference with the scene layout from the second reference.",
+    "instruction": "Combine the identity cue from the first reference with the scene layout from the second reference.",
+    "num_references": 2,
+    "references": [
+      {
+        "ref_id": 1,
+        "role": "identity",
+        "role_name": "identity reference",
+        "crop_path": "images/example_k2_001_ref1.png",
+        "source_path": "images/example_k2_001_ref1.png"
+      },
+      {
+        "ref_id": 2,
+        "role": "layout",
+        "role_name": "layout reference",
+        "crop_path": "images/example_k2_001_ref2.png",
+        "source_path": "images/example_k2_001_ref2.png"
+      }
+    ]
+  },
+  {
+    "sample_id": "example_k3_001",
+    "split": "schema_preview",
+    "prompt": "Generate a coherent image using the object, style, and background cues from three references.",
+    "instruction": "Generate a coherent image using the object, style, and background cues from three references.",
+    "num_references": 3,
+    "references": [
+      {
+        "ref_id": 1,
+        "role": "object",
+        "role_name": "object reference",
+        "crop_path": "images/example_k3_001_ref1.png",
+        "source_path": "images/example_k3_001_ref1.png"
+      },
+      {
+        "ref_id": 2,
+        "role": "style",
+        "role_name": "style reference",
+        "crop_path": "images/example_k3_001_ref2.png",
+        "source_path": "images/example_k3_001_ref2.png"
+      },
+      {
+        "ref_id": 3,
+        "role": "background",
+        "role_name": "background reference",
+        "crop_path": "images/example_k3_001_ref3.png",
+        "source_path": "images/example_k3_001_ref3.png"
+      }
+    ]
+  }
+]

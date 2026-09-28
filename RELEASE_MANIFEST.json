@@ -1,0 +1,36 @@
+{
+  "release_name": "MRG-Router: Pre-Rendering Routing via Capability Probes for Multi-Reference Image Generation",
+  "benchmark": "MR-RouteBench",
+  "queries": 9000,
+  "split_queries": 9000,
+  "split_roles": {
+    "probe": 512,
+    "train": 6888,
+    "validation": 600,
+    "test": 1000
+  },
+  "generators": 10,
+  "outcomes": 90000,
+  "outcome_queries": 9000,
+  "cost_matrix": {
+    "records": 90000
+  },
+  "costbench300": {
+    "queries": 300,
+    "self_hosted_generators": 9,
+    "timing_records": 2700,
+    "records_per_generator": 300,
+    "records_per_reference_count_per_generator": 75
+  },
+  "quality_formula": "Q = R * sqrt(P * (0.1 + 0.9 * A)) * V",
+  "excluded": [
+    "generated images",
+    "model weights",
+    "feature caches",
+    "raw API responses",
+    "reported experimental tables",
+    "human annotations",
+    "ablation summaries",
+    "trained checkpoints and router predictions"
+  ]
+}

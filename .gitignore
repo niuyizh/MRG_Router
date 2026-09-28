@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# Local data, models, and generated artifacts
+models/
+checkpoints/
+outputs/
+generations/
+records/
+logs/
+wandb/
+*.ckpt
+*.safetensors
+*.pt
+*.pth
+*.tar
+*.tar.*
+*.zip
+
+# System files
+.DS_Store

@@ -1,0 +1,14 @@
+reference_fidelity:
+  large_judge_weight: 0.75
+  small_judge_weight: 0.25
+semantic_alignment:
+  atomic_floor: 0.1
+  atomic_scale: 0.9
+  aggregation: geometric_mean
+visual_quality:
+  aggregation: geometric_mean_naturalness_artifact_freedom
+final_quality:
+  formula: "Q = R * S * V"
+strict_parsing: true
+missing_component_policy: reject
+
